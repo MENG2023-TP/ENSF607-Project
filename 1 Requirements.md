@@ -1,6 +1,6 @@
-### DETERMINE THE FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS. MAKE ASSUMPTIONS IF NECESSARY.
+#### DETERMINE THE FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS. MAKE ASSUMPTIONS IF NECESSARY.
 
-### Functional Requirements:
+**Functional Requirements:**
 
 1. Administrators can add and manage repair experts to the system.
 2. Customers can sign up for support services.
@@ -14,7 +14,7 @@
 10. Repair experts can retrieve and update the ticket information they are assigned to using their phone.
 11. Repair experts can access and update the knowledge database using their phone.
 
-#### Assumptions:
+Assumptions:
 
 - The administrator verifies the credential of each repair expert.
 - The Best Appliance website is intuitive, and customers are comfortable using the internet to submit problem tickets.
@@ -22,7 +22,7 @@
 - The repair experts will find the knowledge database useful and will actively contribute to it.
 - Customers like to provide feedback after their service.
 
-### Non-Functional Requirements:
+**Non-Functional Requirements:**
 
 1. The ticket assignment algorithm evolves to accurately match problem tickets with the appropriate appliance specialists, with up-to-date information and in real time. 
 2. The system seamlessly and quickly integrates with constant changes in the ticket assignment algorithm without affecting other parts of the system.
@@ -34,7 +34,7 @@
 8. The system must adapt to continuous increase of customers and traffic.
 9. The system must protect sensitive customer data like name, address, and credit card information.
 
-#### Assumptions:
+Assumptions:
 
 - The automatic ticket assignment is a highly complex task and because of that, it relies on adaptive algorithms that change over time, such as machine learning or something similar.
 - The system can adapt to the changes in the automatic ticket assignment algorithm without disruptions.
