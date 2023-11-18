@@ -24,7 +24,7 @@ Assumptions:
 
 **Non-Functional Requirements:**
 
-1. The ticket assignment algorithm evolves to accurately match problem tickets with the appropriate appliance specialists, with up-to-date information and in real time. 
+1. The ticket assignment algorithm evolves to accurately match problem tickets with the appropriate repair expert, with up-to-date information and in real time. 
 2. The system seamlessly and quickly integrates with constant changes in the ticket assignment algorithm without affecting other parts of the system.
 3. The system must immediately route assigned tickets to repair experts.
 4. The system must immediately handle ticket routing failures by reassigning the ticket to a new expert until the routing is successful.
@@ -39,4 +39,3 @@ Assumptions:
 - The immediate routing of assigned tickets is a priority to provide the best customer service.
 - The risk of ticket routing failure is high.
 - Keeping track of the ticket’s status and implementing backup mechanisms prevent ticket loss.
-- The number of costumers signing up for support services steadily increases.
