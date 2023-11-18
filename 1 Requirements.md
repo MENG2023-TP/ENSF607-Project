@@ -29,6 +29,7 @@ Assumptions:
 3. The system must immediately route assigned tickets to repair experts.
 4. The system must immediately handle ticket routing failures by reassigning the ticket to a new expert until the routing is successful.
 5. The system must keep track of each ticket status until completion and have a backup mechanism to ensure ticket processing integrity.
+6. The system must incorporate real-time monitoring for performance and errors, and scheduled maintenance to ensure operational reliability
 7. The Best Appliance website must always be running and accessible to customers.
 8. The system's resources must be capable of continious expansion to match the expected increase in website traffic.
 9. The system must protect sensitive customer data like name, address, and credit card information.
