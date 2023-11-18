@@ -1,4 +1,4 @@
-#### DETERMINE THE FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS. MAKE ASSUMPTIONS IF NECESSARY.
+### DETERMINE THE FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS. MAKE ASSUMPTIONS IF NECESSARY.
 
 **Functional Requirements:**
 
@@ -28,17 +28,15 @@ Assumptions:
 2. The system seamlessly and quickly integrates with constant changes in the ticket assignment algorithm without affecting other parts of the system.
 3. The system must immediately route assigned tickets to repair experts.
 4. The system must immediately handle ticket routing failures by reassigning the ticket to a new expert until the routing is successful.
-5. The system must keep track of each ticket status until its completion and ensure that each ticket is processed through all the steps in the order the tickets are submitted.
-6. The system must have a backup mechanism in place to recover from crashes or inadvertent events.
+5. The system must keep track of each ticket status until completion and have a backup mechanism to ensure ticket processing integrity.
 7. The Best Appliance front-end website must always be running and accessible to customers.
-8. The system must adapt to continuous increase of customers and traffic.
+8. The system's resources must be capable of continious expansion to match the expected increase in website traffic.
 9. The system must protect sensitive customer data like name, address, and credit card information.
 
 Assumptions:
 
-- The automatic ticket assignment is a highly complex task and because of that, it relies on adaptive algorithms that change over time, such as machine learning or something similar.
-- The system can adapt to the changes in the automatic ticket assignment algorithm without disruptions.
+- The automatic ticket assignment is a highly complex task and because of that, it relies on adaptive algorithms that change over time (example machine learning).
 - The immediate routing of assigned tickets is a priority to provide the best customer service.
 - The risk of ticket routing failure is high.
-- Keeping track of the ticket’s status and data back-ups prevents ticket losses.
-- The Best Appliance website traffic will continue to increase.
+- Keeping track of the ticket’s status and implementing backup mechanisms prevent ticket loss.
+- The number of costumers signing up for support services steadily increases.
