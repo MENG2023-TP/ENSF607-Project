@@ -10,4 +10,5 @@
 1. Ticket processing, assignments and routing: monitors the success rate from ticket assignment to completion and continuously verifies the latency of the process flow.
 2. Notification monitoring: verifies the reliability of SMS notification to repair experts.
 3. Security Monitoring: actively scans for data breaches to protect sensitive information.
+   
 Additional monitoring considerations would include knowledge DB usage, customer feedback, resource utilization, and the health of the system's microservices.
