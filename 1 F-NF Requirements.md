@@ -1,4 +1,4 @@
-###Functional Requirements
+### Functional Requirements
 
 1. Administrators can add and manage repair experts to the system.
 2. Customers can sign up for support services.
@@ -20,7 +20,7 @@ Assumptions:
 - The repair experts will find the knowledge database useful and will actively contribute to it.
 - Customers like to provide feedback after their service.
 
-###Non-Functional Requirements
+### Non-Functional Requirements
 
 1. The ticket assignment algorithm must accurately and dynamically match problem tickets with the appropriate repair expert.
 2. The system must seamlessly and quickly integrate with constant changes in the ticket assignment algorithm without affecting other parts of the system.
