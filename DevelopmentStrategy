@@ -1,0 +1,81 @@
+Deploymet Strategy for Monolithic to Microservice Architecture
+  Best Appliances 
+  Developement, Quality Assessment, and Production 
+
+Development Enviroment:
+
+Monolithic to Micro Service Decomposition
+  Identify the different modules or functionalities within the monolithic application that can be decoupled into microservices.
+  Begin with non-critical or less complex parts of the system for the initial microservices development. 
+  Example:
+  Customer management – create a microservice for customer management with its own database. 
+
+Implement Core Microservices
+  Develop core microservices such as customer management, ticket creation, ticket assignment, and notification services. 
+  Use an event driven architecture, considering the use of an event bus as the API gateway.
+
+Set Up Development Environment
+  Create isolated development environments for each microservice to allow developers to work independently on their services.
+	Utilize containerization (e.g., Docker) for consistency across development environments.
+  Example:
+  Use Docker to containerize the customer management microservice. Establish a development enviroment for the microsservice 
+  with sample data. Set up local enviroment instances for developers to work on specific microservices. 
+
+Implement API Gateway
+  Set up the event bus as an API Gateway to handle communication between microservices.
+  Ensure that the API Gateway can handle the routing of events and requests between services.
+
+Continuous Integration/Continuous Deployment (CI/CD)
+  Implement CI/CD pipelines for automated testing and deployment of microservices.
+  Integrate automated testing to catch issues early in the development process.
+
+Quality Assessment Environment:
+
+Integration Testing
+  Perform integration testing to ensure that microservices interact correctly with each other.
+  Test the overall system's functionality, including ticket creation, assignment, and resolution processes.
+  Example:
+  Integrate the customer management microservice with other existing monolithic modules. Conducting these integration
+  test will ensure correct interaction between the microservice and the monolith. Enable automated testing for the customer management microservice.
+
+Load Testing
+  Simulate production-like loads to identify performance bottlenecks and ensure the system can handle the expected number of users.
+
+Container Orchestration
+  Consider deploying microservices using container orchestration tools to manage scalability and availability.
+
+Monitor and Analyze
+  Implement monitoring tools to track system behavior and identify any issues.
+  Analyze logs and metrics to fine-tune the performance of microservices.
+
+Production Environment:
+
+Rollout Strategy
+  Gradual rollout of microservices starting with less critical functionalities and progressively moving to more critical ones.
+  Use feature flags to enable/disable specific microservices or features as needed.
+  Example:
+  Begin with the deploymeny of the customer management microservice to a limited set of production servers. Use the feature flags
+  to control exposure of the microservice to a subset of users initially. 
+
+Monitoring and Alerting
+  Implement robust monitoring and alerting systems for immediate detection of issues in the production environment.
+  Example:
+  Monitoring and alerting systems can be used to monitor user interactions, response times, and error rates. 
+
+Scaling Strategy
+  Implement auto-scaling mechanisms to adapt to varying loads in the production environment.
+  Example:
+  Scale individual microservices independently based on their usage patterns. Microservices can be scaled
+  horizontally if needed by adding more servers to the microservice. 
+
+Backup and Recovery
+  Implement regular backup and recovery procedures to ensure data integrity and availability in case of failures.
+
+Rollback Plan
+  Have a well-defined rollback plan in case any issues arise during the production deployment.
+  Monitor for anomalies after each deployment phase and be prepared to revert changes if necessary.
+
+Customer Communication:
+  Communicate the introduction of the new customer management system to users, providing support resources for
+  users encountering issues. 
+
